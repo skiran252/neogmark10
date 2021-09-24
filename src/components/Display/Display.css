@@ -1,0 +1,16 @@
+.table-cell {
+  /* width: 10%; */
+}
+table {
+  border: 3px solid blueviolet;
+  table-layout: fixed;
+  width: 100%;
+}
+
+th,
+td {
+  height: 60px;
+  border: 2px  solid blueviolet;
+  width: 10%;
+  /* overflow: hidden; */
+}
