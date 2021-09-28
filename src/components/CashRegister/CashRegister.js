@@ -24,7 +24,7 @@ export default function CashRegister({ handleChange }) {
     const valid = validate();
     if (valid) {
       handleChange(cash - bill);
-      setMessage("calculating...");
+      setMessage("Return amount: "+(cash-bill));
     } else {
       if (bill === cash) {
         setMessage("NO CHANGE NEEDED");
@@ -64,7 +64,7 @@ export default function CashRegister({ handleChange }) {
         <button className="btn btn-primary mt-2" onClick={calculateChange}>
           GET CHANGE
         </button>
-        <h4 className="mt-4" >{message}</h4>
+        <h4 className="mt-4">{message}</h4>
       </div>
     </div>
   );
