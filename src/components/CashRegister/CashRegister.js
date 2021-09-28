@@ -5,10 +5,10 @@ export default function CashRegister({ handleChange }) {
   const [cash, setCash] = useState(0);
   let [message, setMessage] = useState("");
   const validate = () => {
-    if (bill < cash && bill > 0 && cash > 0) {
+
+    if ((cash-bill)>0 && (bill > 0) && (cash > 0) ) {
       return true;
     }
-
     return false;
   };
 
